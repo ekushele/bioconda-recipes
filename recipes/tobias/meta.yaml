@@ -1,4 +1,4 @@
-{% set version = "0.12.3" %}
+{% set version = "0.12.9" %}
 
 package:
   name: tobias
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/tobias/tobias-{{ version }}.tar.gz
-  sha256: a776cb35783ea6b685a1055dbe8d48e5ea6d3f2da21036fc1a07fe81961e8efc
+  sha256: 0b307d94719e0f28e846ddebaf4533383c5129824bca6bcba49b2a531e00b279
 
 build:
   number: 0

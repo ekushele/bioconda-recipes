@@ -1,4 +1,4 @@
-{% set version = "1.0.1" %}
+{% set version = "1.4.3" %}
 
 package:
   name: crisprme
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/samuelecancellieri/CRISPRme/archive/v{{ version }}.tar.gz
-  sha256: 427c755b0c489ded70bb7ada4b347302eab31aa51439c36e8ccf6375db3d4884
+  sha256: b02f40206950b9137fa471924faa66dc83bc3aab813a3d416232b7a39a66716a
   
 build:
   number: 0
