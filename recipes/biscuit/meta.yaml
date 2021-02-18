@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 build:
-  number: 3
+  number: 4
 
 source:
   - url: https://github.com/huishenlab/biscuit/releases/download/v{{ version }}/release-source.zip
@@ -21,21 +21,21 @@ requirements:
   build:
     - {{ compiler('c') }}
   host:
-    - zlib
-    - ncurses
-    - libcurl
+    - zlib >=1.2.11
+    - ncurses >=6.1
+    - libcurl >=7.68.0
   run:
-    - zlib
-    - ncurses
-    - libcurl
+    - zlib >=1.2.11
+    - ncurses >=6.1
+    - libcurl >=7.68.0
     - perl
 
 test:
   commands:
     - biscuit 2>&1 || true
     - QC.sh -h
-#    - build_biscuit_QC_assets.pl -h | grep Usage
-    - build_biscuit_QC_assets.pl -h 2>&1 | grep Usage 
+    - build_biscuit_QC_assets.pl -h 
+#    - head build_biscuit_QC_assets.pl 
 
 about:
   home: https://github.com/huishenlab/biscuit
